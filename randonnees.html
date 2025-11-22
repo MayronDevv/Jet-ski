@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Randonnées Jet-Ski • Oléron Jet</title>
+  <meta name="description" content="Randonnées jet-ski sans permis dès 16 ans • Fort Boyard, Île d’Aix, Fort Énet • Moniteur diplômé">
+
+  <!-- Fonts & icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Global + page-specific -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="randonnee.css" />
+</head>
+<body>
+
+  <!-- HEADER (identique partout) -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="logo mickael.webp" alt="Oléron Jet" class="logo-img">
+        <h1>Oléron<span>Jet</span></h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="location-jetski.html">Locations</a></li>
+          <li><a href="balades.html" class="active">Balades</a></li>
+          <li><a href="bapteme.html">Baptême</a></li>
+          <li><a href="#" id="openModal">Contact</a></li>
+        </ul>
+        <div class="hamburger" aria-label="Menu" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-balades fade-in">
+    <div class="hero-overlay"></div>
+    <div class="wave-bottom"></div>
+    <div class="container hero-content">
+      <h1>Randonnées Jet-Ski<br><span>sans permis</span></h1>
+      <p class="subtitle">Dès 16 ans • Moniteur diplômé • Fort Boyard, Île d’Aix, Fort Énet…</p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section intro-balade fade-in">
+    <div class="container">
+      <h2>Découvrez les sensations jet-ski<br>sans avoir le permis !</h2>
+      <p class="intro-text">
+        Seul ou à deux, moniteur devant, vous pilotez en toute sécurité.
+        Briefing complet, combinaison et gilet fournis, carburant inclus.
+      </p>
+    </div>
+  </section>
+
+  <!-- RANDONNÉES -->
+  <section class="section rando-section">
+    <div class="container">
+      <h2 class="section-title">Nos randonnées guidées</h2>
+
+      <div class="rando-grid">
+        <article class="rando-card fade-in">
+          <img src="phto souvenir.jpg" alt="Tour du Fort Boyard - 30 min">
+          <div class="rando-info">
+            <h3>30 min • Découverte</h3>
+            <p class="lieux">Tour complet du Fort Boyard</p>
+            <p class="price">70 € <span>/ jet (1 ou 2 pers.)</span></p>
+          </div>
+        </article>
+
+        <article class="rando-card fade-in">
+          <img src="photos souvenir.jpg" alt="Île d'Aix - 1h">
+          <div class="rando-info">
+            <h3>1 h • Île d’Aix</h3>
+            <p class="lieux">Fort Boyard + tour Île d’Aix + Fort Énet</p>
+            <p class="price">120 € <span>/ jet</span></p>
+          </div>
+        </article>
+
+        <article class="rando-card fade-in">
+          <img src="photos randonnée 1h.jpg" alt="Rando Confirmée - 1h">
+          <div class="rando-info sport">
+            <h3>1 h • Confirmée</h3>
+            <p class="lieux">Rythme sportif + figures libres</p>
+            <p class="price">135 € <span>/ jet</span></p>
+            <span class="tag">Sensation forte</span>
+          </div>
+        </article>
+
+        <article class="rando-card fade-in">
+          <img src="photos randonnée 2h.jpg" alt="Grand Tour - 2h">
+          <div class="rando-info">
+            <h3>2 h • Grand Tour</h3>
+            <p class="lieux">Fort Boyard • Île d’Aix • Fort Énet • Fort Louvois • Viaduc</p>
+            <p class="price">200 € <span>/ jet</span></p>
+            <span class="tag bestseller">Best-seller</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+    <!-- NOUVELLE INTRO BIEN CENTRÉE -->
+  <section class="highlight-intro fade-in">
+    <div class="container">
+      <h2 class="highlight-title">
+        Découvrez les sensations jet-ski<br>
+        <strong>sans avoir le permis !</strong>
+      </h2>
+      <p class="highlight-text">
+        Seul ou à deux, moniteur devant, vous pilotez en toute sécurité.<br>
+        Briefing complet, combinaison et gilet fournis, carburant inclus.
+      </p>
+    </div>
+  </section>
+
+  <!-- PACK PHOTOS – VERSION AMÉLIORÉE (alignement propre sur grand écran) -->
+  <section class="section pack-photo-new fade-in">
+    <div class="container">
+      <div class="pack-photo-wrapper">
+        <div class="photo-grid-new">
+          <img src="pack photos souvenirs.jpg" alt="Photo souvenir Fort Boyard">
+          <img src="la tour.jpg" alt="Photo souvenir Île d’Aix">
+          <img src="phto souvenir.jpg" alt="Photo souvenir pose fun">
+        </div>
+        <div class="photo-text-new">
+          <h2>Pack Photos • 10 € <small>/ jet</small></h2>
+          <p>
+            Minimum 6 photos professionnelles prises pendant la balade<br>
+            Fort Boyard, Île d’Aix, poses fun… souvenirs garantis !
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDITIONS & RÉSERVATION -->
+  <section class="section conditions-balade fade-in">
+    <div class="container">
+      <h2 class="section-title">Conditions & Réservation</h2>
+      <div class="grid-2">
+        <div class="conditions-list">
+          <ul class="check">
+            <li>Pilote dès 16 ans (autorisation parentale pour mineurs)</li>
+            <li>Passager enfant dès 1,30 m</li>
+            <li>Max 200 kg par jet</li>
+            <li>Carburant inclus • Équipement fourni</li>
+            <li>Moniteur diplômé brevet d’État</li>
+          </ul>
+        </div>
+        <div class="resa-info">
+          <div class="resa-card">
+            <h3>Basse saison</h3>
+            <p>Tél : <a href="tel:0685438709">06 85 43 87 09</a><br>
+            Directement à la base<br>
+            Plage de Boyardville • 09h30 – 19h00</p>
+          </div>
+          <div class="resa-card">
+            <h3>Pleine saison<br><small>(juillet-août)</small></h3>
+            <p>Billetterie port : 10h-12h / 14h-18h<br>
+            Ou base plage : 09h30 – 19h00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL CONTACT (identique au site) -->
+  <div class="modal" id="contactModal">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Fermer">×</button>
+      <div class="wave-bg"></div>
+      <h3>Prenez la vague avec nous !</h3>
+      <form>
+        <input type="text" placeholder="Votre nom" required>
+        <input type="tel" placeholder="Téléphone" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="4" placeholder="Date souhaitée • Nombre de personnes • Message..."></textarea>
+        <button type="submit">Envoyer la demande</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts (une seule inclusion et defer pour sécurité) -->
+  <script src="script.js" defer></script>
+</body>
+</html>

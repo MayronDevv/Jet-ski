@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Baptême Jet‑Ski • Oléron Jet</title>
+  <meta name="description" content="Offrez-vous un baptême jet-ski derrière un moniteur : sensations, sécurité et vues Fort Boyard." />
+
+  <!-- Fonts & icons (comme le reste du site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Global style + page-specific CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bapteme.css">
+</head>
+<body>
+  <!-- HEADER (identique) -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="logo mickael.webp" alt="Oléron Jet" class="logo-img">
+        <h1>Oléron<span>Jet</span></h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="location-jetski.html">Locations</a></li>
+          <li><a href="randonnees.html">Balades</a></li>
+          <li><a href="tarifs.html">Baptême</a></li>
+          <li><a href="#" id="openModal">Contact</a></li>
+        </ul>
+        <div class="hamburger" aria-label="Menu" tabindex="0"><span></span><span></span><span></span></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO small, same theme -->
+  <section class="hero-full fade-in">
+    <div class="hero-overlay"></div>
+    <div class="wave-bottom"></div>
+    <div class="hero-grid container">
+      <div class="hero-left-new">
+        <h2>Baptême Jet‑Ski<br><span>Offrez‑vous un moment inoubliable</span></h2>
+        <p class="ouverture">Derrière un moniteur — idéal pour découvrir sans conduire</p>
+      </div>
+      <div class="hero-right">
+        <!-- petite illustration/photo -->
+        <div class="service-card" style="max-width:420px;margin:0 auto;">
+          <img src="kerry.jpg" alt="Baptême jet-ski" style="width:100%;height:220px;object-fit:cover;border-radius:12px;margin-bottom:14px;">
+          <h3>Baptême 15 minutes</h3>
+          <p class="price">45€</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESCRIPTION -->
+  <section class="section">
+    <div class="container">
+      <h3>Offrez‑vous un moment inoubliable !</h3>
+      <p class="intro-text">
+        Vous voulez découvrir les sensations du Jet‑ski sans conduire ? Offrez‑vous un <strong>baptême</strong> : installé(e) derrière notre moniteur diplômé, profitez pleinement de la glisse.
+        Le moniteur adaptera vitesse et trajectoire selon vos envies — plus tranquille ou plus dynamique, avec ou sans virages. Pour les amateurs de sensations, il est possible d'approcher le Fort Boyard.
+      </p>
+
+      <div class="grid-2" style="margin-top:1.6rem;align-items:start;">
+        <div>
+          <h4>Détails</h4>
+          <ul class="check">
+            <li>Baptême encadré par un moniteur diplômé</li>
+            <li>Durée : 15 minutes</li>
+            <li>Tarif : 45€</li>
+            <li>Accessible dès 16 ans (ou avec autorisation selon conditions)</li>
+          </ul>
+        </div>
+
+        <div class="reservation">
+          <h4>Comment réserver ?</h4>
+          <h5>Basse saison</h5>
+          <p>Réservation par téléphone au <a href="tel:0685438709">06 85 43 87 09</a> ou directement à la base (entrée plage de Boyardville). Horaires : 09h30–19h00.</p>
+
+          <h5>Pleine saison</h5>
+          <p>Pas de réservation par téléphone. Renseignements au <a href="tel:0685438709">06 85 43 87 09</a>.
+          Réservation à la billetterie du port de Boyardville (10h00–12h00 / 14h00–18h00) ou directement à la base (09h30–19h00).</p>
+        </div>
+      </div>
+
+      
+
+  <!-- MODAL (réutilise la modal globale) -->
+  <div class="modal" id="contactModal">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Fermer">×</button>
+      <div class="wave-bg"></div>
+      <h3>Prenez la vague avec nous !</h3>
+      <form>
+        <input type="text" placeholder="Votre nom" required>
+        <input type="tel" placeholder="Téléphone" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="4" placeholder="Date souhaitée • Nombre de personnes • Message..."></textarea>
+        <button type="submit">Envoyer la demande</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts (une seule inclusion) -->
+  <script src="script.js" defer></script>
+</body>
+</html>

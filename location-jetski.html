@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Jet Ski • Oléron Jet</title>
+    <meta name="description" content="Location jet ski avec permis • Yamaha VX 115cv & FX 180cv • Île d'Oléron">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="location-style.css">
+</head>
+<body>
+
+    <!-- ... tout ton code actuel ... -->
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="logo mickael.webp" alt="Oléron Jet" class="logo-img">
+            <h1>Oléron<span>Jet</span></h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="location-jetski.html" class="active">Locations</a></li>
+                <li><a href="randonnees.html">Balades</a></li>
+                <li><a href="bapteme.html">Baptême</a></li>
+                <li><a href="#" id="openModal">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- HERO -->
+    <section class="hero-location fade-in">
+        <div class="container">
+            <h2>Naviguez en totale liberté !</h2>
+            <p class="subtitle">Yamaha dernière génération • Avec permis mer côtier</p>
+        </div>
+        <div class="wave-bottom"></div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section fade-in">
+        <div class="container intro-text">
+            Titulaire du permis mer côtier et déjà à l’aise sur un jet ?<br>
+            Prenez les commandes de nos <strong>Yamaha VX 115 cv</strong> ou <strong>FX HO 180 cv 2025</strong> et explorez l’Île d’Oléron et Fort Boyard en totale autonomie.
+        </div>
+    </section>
+
+    <!-- LES 2 JETS -->
+    <section class="section jets-grid">
+        <div class="jet-card">
+            <img src="jet 115ch.jpg" alt="Yamaha VX 115cv">
+            <div class="jet-info">
+                <h3>YAMAHA VX RIDE 2024 <span class="puce">115 cv</span></h3>
+                <p>Joueur, facile à prendre en main. Idéal seul ou à deux.</p>
+                <ul><li>2 places (max 200 kg)</li><li>Moteur 1049 cm³</li><li>Système RIDE exclusif</li></ul>
+                <div class="prix">
+                    <p>1 h → 100 €</p>
+                    <p>2 h → 170 €</p>
+                    <small>Hors carburant</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="jet-card">
+            <img src="jet 180ch.jpg" alt="Yamaha FX 180cv">
+            <div class="jet-info">
+                <h3>YAMAHA FX HO 2025 <span class="puce">180 cv</span></h3>
+                <p>Sportif, ultra stable, parfait dans les vagues.</p>
+                <ul><li>3 places (max 230 kg)</li><li>Moteur 1812 cm³</li><li>Potence réglable</li></ul>
+                <div class="prix">
+                    <p>1 h → 120 €</p>
+                    <p>2 h → 200 €</p>
+                    <small>Hors carburant</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONDITIONS & RÉSERVATION (tu gardes ton contenu exact, juste les classes) -->
+    <section class="section conditions fade-in">
+        <div class="container">
+            <h3>Conditions de location</h3>
+            <div class="grid-2">
+                <div class="check"><ul><!-- tes li ici --></ul></div>
+                <div class="check"><ul><!-- tes li ici --></ul></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section resa fade-in">
+        <div class="container">
+            <h3>Comment réserver ?</h3>
+            <div class="grid-2">
+                <div class="card-resa"><h4>Basse saison</h4><p><!-- ton texte --></p></div>
+                <div class="card-resa"><h4>Pleine saison</h4><p><!-- ton texte --></p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fermer">×</button>
+            <div class="wave-bg"></div>
+            <h3>Prenez la vague avec nous !</h3>
+            <form>
+                <input type="text" placeholder="Votre nom" required>
+                <input type="tel" placeholder="Téléphone" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="4" placeholder="Date souhaitée • Nombre de personnes • Message..."></textarea>
+                <button type="submit">Envoyer la demande</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="contactModal">
+        <!-- ton modal complet ici -->
+    </div>
+
+    <script src="script.js"></script>
+    <script src="location.js"></script>
+</body>
+</html>

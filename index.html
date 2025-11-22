@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oléron Jet - Location & Balades Jetski Île d'Oléron</title>
+    <meta name="description" content="Location jetski sans permis dès 16 ans • Balades Fort Boyard • Oléron Jet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo mickael.webp" alt="Oléron Jet" class="logo-img">
+                <h1>Oléron<span>Jet</span></h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="location-jetski.html">Locations</a></li>
+                    <li><a href="randonnees.html">Balades</a></li>
+                    <li><a href="bapteme.html">Baptême</a></li>
+                    <li><a href="#" id="openModal">Contact</a></li>
+                </ul>
+                <div class="hamburger" aria-label="Menu" tabindex="0">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO (ton hero actuel, je touche rien) -->
+    <section class="hero-full">
+        <div class="hero-overlay"></div>
+        <div class="wave-bottom"></div>
+        <div class="hero-grid container">
+            <div class="hero-left-new">
+                <h2>Découvrez l’Île d’Oléron<br><span>à fond les gaz !</span></h2>
+                <div class="resa-info">
+                    <div class="basse"><h4>Basse saison</h4><p>Réservation par téléphone ou directement à la base<br>Plage de Boyardville — 09h30 → 19h00</p></div>
+                    <div class="haute"><h4>Pleine saison <small>(juillet-août)</small></h4><p>Billetterie port : 10h-12h / 14h-18h<br>Ou directement à la base : 09h30 → 19h00</p></div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="cards-top">
+                    <div class="service-card"><i class="fas fa-key"></i><h3>Sans permis</h3><p>Jetski accessibles dès 16 ans avec moniteur diplômé</p></div>
+                    <div class="service-card"><i class="fas fa-tachometer-alt"></i><h3>Avec permis</h3><p>Location libre • Yamaha VX 110/180 cv dernière génération</p></div>
+                </div>
+                <div class="cards-bottom">
+                    <div class="service-card"><i class="fas fa-route"></i><h3>Balades guidées</h3><p>Fort Boyard, La Rochelle, Aix… les plus beaux spots !</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fermer">×</button>
+            <div class="wave-bg"></div>
+            <h3>Prenez la vague avec nous !</h3>
+            <form>
+                <input type="text" placeholder="Votre nom" required>
+                <input type="tel" placeholder="Téléphone" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="4" placeholder="Date souhaitée • Nombre de personnes • Message..."></textarea>
+                <button type="submit">Envoyer la demande</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
