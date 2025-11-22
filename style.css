@@ -4,12 +4,10 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
 .container{max-width:1400px;margin:0 auto;padding:0 20px;}
 :root{--turquoise:#0dc1ce;--bleu-fonce:#004d66;--orange:#ff6b35;}
 
-/* ==================== HEADER ==================== */
 .header{position:fixed;top:0;left:0;right:0;background:rgba(0,77,102,0.95);backdrop-filter:blur(10px);z-index:1000;padding:1.2rem 0;transition:all .4s;}
 .header.scrolled{padding:.7rem 0;background:rgba(0,77,102,0.99);}
 .header .container{display:flex;justify-content:space-between;align-items:center;}
 
-/* LOGO + TEXTE – PARFAIT SUR TOUS LES ÉCRANS */
 .logo{
     display:flex;
     align-items:center;
@@ -42,7 +40,6 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
 .hamburger.active span:nth-child(2){opacity:0;}
 .hamburger.active span:nth-child(3){transform:translateY(-11px) rotate(-45deg);}
 
-/* Sur très petits écrans */
 @media (max-width: 480px) {
     .logo{margin-left:15px;gap:12px;}
     .logo-img{height:68px;}
@@ -51,7 +48,7 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
 @media (min-width: 481px) and (max-width:1542px) {
     .logo{margin-left:15px;}
 }
-/* ==================== HERO ==================== */
+
 .hero-full{
     position:relative;
     min-height:100dvh;
@@ -109,7 +106,6 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
 .service-card h3{font-size:1.9rem;margin-bottom:0.7rem;font-weight:700;}
 .service-card p{font-size:1.1rem;line-height:1.55;opacity:0.95;}
 
-/* ==================== MODAL 100% RESPONSIVE ==================== */
 .modal{display:none;position:fixed;inset:0;background:rgba(0,77,102,0.97);backdrop-filter:blur(15px);z-index:2000;align-items:center;justify-content:center;padding:15px;overflow-y:auto;}
 .modal.active{display:flex;}
 .modal-content{
@@ -146,7 +142,6 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
     .modal button{padding:1.2rem;font-size:1.3rem;}
 }
 
-/* ==================== RESPONSIVE GÉNÉRAL ==================== */
 @media (max-width: 1100px) {
     .hero-grid{grid-template-columns:1fr;gap:4rem;text-align:center;justify-items:center;}
     .hero-left-new,.hero-right{text-align:center;}
@@ -168,7 +163,6 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
     .service-card{padding:2.6rem 1.8rem;}
 }
 
-/* Safe area iPhone */
 @supports (padding-top: env(safe-area-inset-top)) {
     .hero-full{padding-top:calc(env(safe-area-inset-top) + 180px) !important;}
 }
@@ -177,15 +171,12 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
         padding-top: calc(env(safe-area-inset-top) + 140px);
     }
 }
-
-/* Version de repli pour les écrans < 992px (même sans support env()) */
 @media (max-width: 992px) {
     .hero-full {
-        padding-top: 160px; /* 140px + marge de sécurité ≈ 20px */
+        padding-top: 160px;
     }
 }
 
-/* ==================== PAGE LOCATION ==================== */
 .hero-location{
     position:relative;
     background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1563809840276-78d460c164af?q=80&w=2070&auto=format') center/cover;
@@ -216,17 +207,13 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
 .conditions h3{text-align:center;font-size:2.8rem;margin-bottom:3rem;color:var(--bleu-fonce);}
 .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:3rem;}
 .check li{position:relative;padding-left:28px;margin:1rem 0;font-size:1.1rem;}
-.check li::before{content:'✓';position:absolute;left:0;color:var(--turquoise);font-weight:bold;font-size:1.3rem;}
+.check li::before{content:'Checkmark';position:absolute;left:0;color:var(--turquoise);font-weight:bold;font-size:1.3rem;}
 
 .resa{background:var(--bleu-fonce);color:white;padding:90px 0;}
 .resa h3{text-align:center;font-size:2.8rem;margin-bottom:3rem;}
 .card-resa{background:rgba(255,255,255,0.12);padding:2.5rem;border-radius:20px;text-align:center;}
 .card-resa h4{font-size:1.8rem;margin-bottom:1rem;color:var(--turquoise);}
 
-
-:root{--turquoise:#0dc1ce;--bleu-fonce:#004d66;--orange:#ff6b35}
-
-/* HERO */
 .hero-balades{
   position:relative;
   min-height:62vh;
@@ -240,19 +227,8 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
 .hero-balades h1{font-family:'Bebas Neue',sans-serif; font-size:clamp(2.8rem,6vw,5.6rem); line-height:1}
 .hero-balades .subtitle{font-size:1.15rem; margin-top:0.6rem; opacity:0.95}
 
-
-
-
-
-
-
-
-
-
-/* INTRO */
 .intro-balade .intro-text{font-size:1.15rem; line-height:1.7; text-align:left}
 
-/* RANDO GRID */
 .rando-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -276,7 +252,6 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
 .tag{display:inline-block; margin-top:0.6rem; padding:6px 10px; border-radius:999px; background:var(--turquoise); color:#003b44; font-weight:700; font-size:0.85rem}
 .bestseller{background:var(--orange); color:white}
 
-/* PACK PHOTOS */
 .pack-photo{
   display:grid;
   grid-template-columns:1fr 380px;
@@ -291,18 +266,15 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
 .photo-grid img{width:100%; height:160px; object-fit:cover; border-radius:12px}
 .photo-text h2{margin:0 0 0.6rem 0; color:var(--bleu-fonce)}
 
-/* CONDITIONS & RESA */
 .conditions-balade .check{background:transparent}
 .check ul{list-style:none; padding:0; margin:0}
 .check li{position:relative; padding-left:30px; margin:0.9rem 0}
-.check li::before{content:'✓'; position:absolute; left:0; top:0; color:var(--turquoise); font-weight:800}
+.check li::before{content:'Checkmark'; position:absolute; left:0; top:0; color:var(--turquoise); font-weight:800}
 .resa-card{background:rgba(255,255,255,0.95); padding:1rem; border-radius:12px; box-shadow:0 12px 30px rgba(0,0,0,0.06)}
 
-/* Small helper for fade-in elements (re-uses your existing js observer) */
 .fade-in{opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease}
 .fade-in.visible{opacity:1; transform:none}
 
-/* Responsive */
 @media (max-width:1100px){
   .rando-grid{grid-template-columns:repeat(2,1fr)}
   .pack-photo{grid-template-columns:1fr 320px}
@@ -318,20 +290,12 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
   .container{padding:0 16px}
 }
 
-
-
-
-
-/*=====================================
-  NOUVELLE INTRO CENTRÉE & PUNCHY
-=====================================*/
 .highlight-intro {
   padding: 4rem 1rem;
   text-align: center;
   background: linear-gradient(135deg, #f0fffe 0%, #e6f7f7 100%);
   margin: 2rem auto;
 }
-
 .highlight-title {
   font-size: 2.4rem;
   line-height: 1.25;
@@ -339,12 +303,10 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
   color: var(--bleu-fonce);
   font-weight: 800;
 }
-
 .highlight-title strong {
   color: var(--turquoise);
   font-weight: 900;
 }
-
 .highlight-text {
   font-size: 1.25rem;
   max-width: 800px;
@@ -353,14 +315,10 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
   color: #333;
 }
 
-/*=====================================
-  PACK PHOTOS – VERSION PROPRE (≥ 768px = côté à côté)
-=====================================*/
 .pack-photo-new {
   padding: 4rem 0;
   background: #fafafa;
 }
-
 .pack-photo-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -369,13 +327,11 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
   max-width: 1100px;
   margin: 0 auto;
 }
-
 .photo-grid-new {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.8rem;
 }
-
 .photo-grid-new img {
   width: 100%;
   height: 180px;
@@ -384,24 +340,19 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
   transition: transform 0.3s ease;
 }
-
 .photo-grid-new img:hover {
   transform: scale(1.05);
 }
-
 .photo-text-new h2 {
   font-size: 2rem;
   color: var(--bleu-fonce);
   margin: 0 0 1rem 0;
 }
-
 .photo-text-new p {
   font-size: 1.15rem;
   line-height: 1.7;
   color: #333;
 }
-
-/* Responsive – mobile = texte en haut, photos en dessous */
 @media (max-width: 767px) {
   .highlight-title {
     font-size: 1.9rem;
@@ -409,28 +360,18 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
   .highlight-intro {
     padding: 3rem 1rem;
   }
-
   .pack-photo-wrapper {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-
   .photo-grid-new {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .photo-grid-new img {
     height: 120px;
   }
 }
 
-
-
-
-
-
-
-/* --- PAGE BAPTÊME --- */
 .bapteme-hero {
     position: relative;
     background: #000;
@@ -438,7 +379,6 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
     padding: 80px 20px;
     text-align: center;
 }
-
 .bapteme-hero img {
     width: 100%;
     height: 350px;
@@ -446,21 +386,16 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
     border-radius: 12px;
     margin-bottom: 20px;
 }
-
-/* Title */
 .bapteme-hero h1 {
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
-
 .bapteme-section {
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
 }
-
-/* Main text block */
 .bapteme-description {
     background: #ffffff;
     padding: 30px;
@@ -468,18 +403,14 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
     box-shadow: 0 4px 18px rgba(0,0,0,0.08);
     line-height: 1.7;
 }
-
 .bapteme-description h2 {
     font-size: 1.9rem;
     margin-bottom: 15px;
     color: #003366;
 }
-
 .bapteme-description p {
     margin-bottom: 15px;
 }
-
-/* Détails list */
 .details-box {
     margin: 25px 0;
     padding: 20px;
@@ -487,34 +418,25 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
     border-left: 4px solid #0077ff;
     border-radius: 10px;
 }
-
 .details-box ul {
     list-style: none;
     padding: 0;
 }
-
 .details-box ul li {
     margin: 8px 0;
     font-weight: 500;
 }
-
-/* Reservation section */
 .resa-section h3 {
     margin-top: 25px;
     font-size: 1.5rem;
     color: #003366;
 }
-
 .resa-section p {
     margin: 8px 0;
 }
-
-/* Spacing at bottom of page */
 .bapteme-bottom-space {
     height: 80px;
 }
-
-/* Cadre général autour des informations */
 .bapteme-info-box {
     background: #ffffff;
     padding: 25px;
@@ -523,7 +445,6 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
     box-shadow: 0 6px 20px rgba(0,0,0,0.06);
     margin-top: 30px;
 }
-
 .reservation {
     background:rgba(0, 77, 102, 0.99);
     padding:2.6rem 2rem;
@@ -544,7 +465,6 @@ body{font-family:'Montserrat',sans-serif;background:linear-gradient(to bottom,#a
 }
 .reservation p{font-size:1.1rem;line-height:1.55;opacity:0.95;}
 
-/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .bapteme-hero img {
         height: 250px;

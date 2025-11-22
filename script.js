@@ -31,14 +31,12 @@ modal.addEventListener('click', e => {
     }
 });
 
-// location.js → uniquement pour la page location-jetski.html
 document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
 
-                // Animation des listes dans "Conditions"
                 if (entry.target.classList.contains('check')) {
                     entry.target.querySelectorAll('li').forEach((li, i) => {
                         setTimeout(() => li.classList.add('visible'), i * 120);
